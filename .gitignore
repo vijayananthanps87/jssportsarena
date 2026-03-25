@@ -1,5 +1,13 @@
-images/gallery/Home.mp4
 images/**/*.jpg
 images/**/*.jpeg
 images/**/*.png
 images/**/*.webp
+images/**/*.mp4
+images/**/*.MOV
+images/**/*.mov
+images/**/*.HEIC
+images/**/*.heic
+images/**/*.HEIF
+images/**/*.heif
+images/**/*.DNG
+images/**/*.dng
