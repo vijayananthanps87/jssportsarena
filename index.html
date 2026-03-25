@@ -185,9 +185,9 @@
 
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
       <div class="max-w-2xl">
-        <div class="inline-flex items-center gap-2 bg-brand-700/20 border border-brand-600/30 rounded-full px-4 py-1.5 mb-6">
-          <span class="w-2 h-2 rounded-full bg-brand-400 animate-pulse"></span>
-          <span class="text-brand-300 text-sm font-medium">Now Open — Smeaton Grange</span>
+        <div id="statusBadge" class="inline-flex items-center gap-2 bg-brand-700/20 border border-brand-600/30 rounded-full px-4 py-1.5 mb-6">
+          <span id="statusDot" class="w-2 h-2 rounded-full bg-brand-400 animate-pulse"></span>
+          <span id="statusText" class="text-brand-300 text-sm font-medium">Now Open</span>
         </div>
 
         <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
@@ -397,5 +397,36 @@
     </div>
   </footer>
 
+  <script>
+    (function() {
+      const now = new Date();
+      const parts = new Intl.DateTimeFormat('en-AU', {
+        timeZone: 'Australia/Sydney',
+        hour: 'numeric',
+        minute: 'numeric',
+        hour12: false
+      }).formatToParts(now);
+      const h = parseInt(parts.find(p => p.type === 'hour').value);
+      const m = parseInt(parts.find(p => p.type === 'minute').value);
+      const total = h * 60 + m;
+      const isOpen = total >= 6 * 60 && total < 23 * 60;
+
+      const badge = document.getElementById('statusBadge');
+      const dot   = document.getElementById('statusDot');
+      const text  = document.getElementById('statusText');
+
+      if (isOpen) {
+        badge.className = 'inline-flex items-center gap-2 bg-brand-700/20 border border-brand-600/30 rounded-full px-4 py-1.5 mb-6';
+        dot.className   = 'w-2 h-2 rounded-full bg-brand-400 animate-pulse';
+        text.className  = 'text-brand-300 text-sm font-medium';
+        text.textContent = 'Now Open';
+      } else {
+        badge.className = 'inline-flex items-center gap-2 bg-red-900/20 border border-red-600/30 rounded-full px-4 py-1.5 mb-6';
+        dot.className   = 'w-2 h-2 rounded-full bg-red-400';
+        text.className  = 'text-red-300 text-sm font-medium';
+        text.textContent = 'Now Closed';
+      }
+    })();
+  </script>
 </body>
 </html>
