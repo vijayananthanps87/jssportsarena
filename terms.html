@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms & Conditions - JS Sports Arena | Booking Terms & Policies</title>
+  <meta name="description" content="JS Sports Arena Terms & Conditions — booking, cancellation, court use and venue policies." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { heading:['Outfit','sans-serif'], body:['Inter','sans-serif'] },
+          colors: {
+            brand:{50:'#edfff5',100:'#d5ffeb',200:'#aeffd8',300:'#70ffb8',400:'#2bfd91',500:'#00e571',600:'#00c05c',700:'#00964a',800:'#06753d',900:'#076034'},
+            dark:{900:'#0a0f1a',800:'#111827',700:'#1a2332',600:'#243044'}
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'Inter',sans-serif;background:#0a0f1a;color:#e2e8f0}
+    .announcement-bar{background:linear-gradient(90deg,#00964a,#00c05c,#00964a);background-size:200% 100%;animation:shimmer 3s ease-in-out infinite}
+    @keyframes shimmer{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+    .nav-blur{backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+    .btn-primary{background:linear-gradient(135deg,#00c05c,#00964a);transition:all 0.3s ease}
+    .btn-primary:hover{box-shadow:0 8px 30px rgba(0,192,92,0.35);transform:translateY(-2px)}
+    .mobile-menu{transform:translateX(100%);transition:transform 0.3s ease}.mobile-menu.open{transform:translateX(0)}
+    .legal-content h2{font-family:'Outfit',sans-serif;font-size:1.35rem;font-weight:700;color:#fff;margin-top:2.5rem;margin-bottom:1rem;padding-bottom:0.5rem;border-bottom:1px solid rgba(255,255,255,0.06)}
+    .legal-content p{color:#9ca3af;line-height:1.8;margin-bottom:1rem}
+    .legal-content ul{list-style:none;padding:0;margin-bottom:1rem}
+    .legal-content ul li{color:#9ca3af;line-height:1.8;padding-left:1.5rem;position:relative;margin-bottom:0.5rem}
+    .legal-content ul li::before{content:'';position:absolute;left:0;top:0.65rem;width:6px;height:6px;border-radius:50%;background:#00c05c}
+    .legal-content a{color:#2bfd91;text-decoration:none;transition:color 0.2s}
+    .legal-content a:hover{color:#70ffb8}
+    .legal-content strong{color:#e2e8f0}
+  </style>
+</head>
+<body>
+
+  <!-- Announcement Banner -->
+  <div class="announcement-bar text-center py-2 px-4 text-sm font-semibold text-white">Buy credits now and get more game time 💰</div>
+
+  <!-- Navigation -->
+  <nav class="nav-blur sticky top-0 z-50 bg-dark-900/80 border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="/" class="flex items-center gap-3"><img src="https://jssportsarena.com.au/public/js-sports-logo.png" alt="JS Sports Arena Logo" class="h-10 w-auto" /></a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/" class="text-gray-400 text-sm hover:text-brand-400 transition">Home</a>
+          <a href="/book-courts.html" class="text-gray-400 text-sm hover:text-brand-400 transition">Book Courts</a>
+          <a href="/rates.html" class="text-gray-400 text-sm hover:text-brand-400 transition">Rates</a>
+          <a href="/about.html" class="text-gray-400 text-sm hover:text-brand-400 transition">About</a>
+          <a href="/gallery.html" class="text-gray-400 text-sm hover:text-brand-400 transition">Gallery</a>
+          <a href="/contact.html" class="text-gray-400 text-sm hover:text-brand-400 transition">Contact</a>
+          <a href="/book-courts.html" class="btn-primary text-white text-sm font-semibold px-5 py-2.5 rounded-lg">Book Now</a>
+        </div>
+        <button onclick="document.getElementById('mobileMenu').classList.toggle('open')" class="md:hidden text-white">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="mobile-menu fixed inset-y-0 right-0 z-50 w-72 bg-dark-800 shadow-2xl p-6">
+    <button onclick="document.getElementById('mobileMenu').classList.toggle('open')" class="absolute top-4 right-4 text-gray-400 hover:text-white">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+    <div class="flex flex-col gap-6 mt-12">
+      <a href="/" class="text-gray-400 text-lg hover:text-white transition">Home</a>
+      <a href="/book-courts.html" class="text-gray-400 text-lg hover:text-white transition">Book Courts</a>
+      <a href="/rates.html" class="text-gray-400 text-lg hover:text-white transition">Rates</a>
+      <a href="/about.html" class="text-gray-400 text-lg hover:text-white transition">About</a>
+      <a href="/gallery.html" class="text-gray-400 text-lg hover:text-white transition">Gallery</a>
+      <a href="/contact.html" class="text-gray-400 text-lg hover:text-white transition">Contact</a>
+      <a href="/book-courts.html" class="btn-primary text-white text-center font-semibold px-5 py-3 rounded-lg mt-4">Book Now</a>
+    </div>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="py-20 bg-dark-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-brand-400 font-semibold text-sm uppercase tracking-wider mb-3">Legal</p>
+      <h1 class="font-heading text-4xl sm:text-5xl font-extrabold text-white mb-4">Terms & Conditions</h1>
+      <p class="text-gray-400 text-lg max-w-2xl mx-auto">By booking, entering, or using JS Sports Arena's venue, services or facilities, you acknowledge that you have read and agree to our Terms & Conditions.</p>
+    </div>
+  </section>
+
+  <!-- ===================== CONTENT ===================== -->
+  <section class="py-16 bg-dark-800">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 legal-content">
+
+      <h2>1. Acceptance of terms</h2>
+      <ul>
+        <li>By using our website and booking system you enter into a legally binding agreement with JS Sports Arena under these Terms & Conditions.</li>
+        <li>If you do not accept these Terms, or any revisions we publish, you must stop using the website and booking system immediately.</li>
+      </ul>
+
+      <h2>2. Assumption of risk & liability</h2>
+      <ul>
+        <li>Use of JS Sports Arena facilities involves inherent risks (including physical injury or death). All entrants use the facilities at their own risk.</li>
+        <li>To the maximum extent permitted by law, JS Sports Arena (and its officers, employees, agents and contractors) will not be liable for any injury, loss or damage suffered by any person entering JS Sports Arena premises, including where caused by negligence.</li>
+        <li>Entrants agree to release, indemnify and hold harmless JS Sports Arena and its representatives from any and all claims, liabilities, expenses, losses and damages arising from use of JS Sports Arena facilities.</li>
+        <li>In the event of an emergency, entrants authorise JS Sports Arena to obtain medical assistance, treatment and transport as JS Sports Arena reasonably deems necessary. Entrants are responsible for any costs associated with such medical treatment or transportation.</li>
+      </ul>
+
+      <h2>3. Behaviour, damage & entry</h2>
+      <ul>
+        <li>All entrants must behave appropriately and follow lawful directions given by JS Sports Arena staff. Abusive language, derogatory remarks, or disruptive behaviour are not tolerated.</li>
+        <li>Any entrant who causes damage to JS Sports Arena property will be required to make good the damage or will be charged the cost of repair or replacement.</li>
+        <li>JS Sports Arena reserves the right to refuse entry to, or remove, any person from the premises.</li>
+      </ul>
+
+      <h2>4. Personal property & inspections</h2>
+      <ul>
+        <li>Entrants are responsible for their own property at all times. JS Sports Arena does not accept liability for items lost, stolen or damaged while on its premises (including in amenities).</li>
+        <li>JS Sports Arena reserves the right to inspect personal belongings on entry and exit and may refuse entry or remove persons for offensive behaviour, theft, vandalism, failure to supervise minors or failure to comply with safety instructions or other conditions of entry.</li>
+      </ul>
+
+      <h2>5. Access & check-in</h2>
+      <ul>
+        <li>Entrants must use the Access Pin-pad (or other access method published by JS Sports Arena) to check in and gain access to courts and facilities.</li>
+        <li>All court bookings must be made and paid for prior to use. Members remain responsible for payment for their guests.</li>
+        <li>Entrants must strictly adhere to their allocated timeslot and court number. Failure to comply may incur additional charges. Extra court time may be booked and paid for online via the booking system.</li>
+      </ul>
+
+      <h2>6. Coaching & equipment use</h2>
+      <ul>
+        <li>Only authorised JS Sports Arena coaches may provide coaching or lessons at JS Sports Arena venues. Coaching baskets and other coaching equipment on courts are for use by authorised JS Sports Arena coaches only.</li>
+        <li>Entrants must not accept coaching at JS Sports Arena other than from an authorised JS Sports Arena coach.</li>
+      </ul>
+
+      <h2>7. Attire</h2>
+      <p>Appropriate attire must be worn at all times, which always includes a shirt and non-marking court shoes while on courts. JS Sports Arena may refuse facility use to anyone not complying with attire rules.</p>
+
+      <h2>8. Photography & recording</h2>
+      <p>The use of cameras, video or other recording equipment (including mobile phones for recording) is not permitted on JS Sports Arena premises without prior written consent from JS Sports Arena.</p>
+
+      <h2>9. Smoking & alcohol</h2>
+      <p>Smoking and the consumption of alcohol are prohibited in all areas of JS Sports Arena venues.</p>
+
+      <h2>10. Privacy</h2>
+      <p>We respect your privacy and only collect and store information necessary for the functioning of our website and services. By providing personal information you consent to its use for service operation, research and marketing as outlined in our <a href="/privacy.html">Privacy Policy</a>.</p>
+      <p>We may contact you through in-account notifications or off-platform (text, email) for functional notifications. We may also send marketing/promotional material; you may opt out of direct marketing at any time. Functional communications related to service use will continue even if you opt out of marketing.</p>
+
+      <h2>11. Security cameras</h2>
+      <p>Security cameras operate within JS Sports Arena venues. Entrants acknowledge they may be recorded while on premises.</p>
+
+      <h2>12. Booking system & access codes</h2>
+      <ul>
+        <li>Our online booking system is the authorised method for reserving court time. An acknowledgement email will be sent after booking.</li>
+        <li>That acknowledgement email will include the access PIN required to enter the premises. Court lights will only activate once the access code is entered at the entry door; lights remain on for the duration of the booking.</li>
+        <li><strong>Access codes become valid 15 minutes prior to a booked timeslot</strong> to allow early check-in. <strong>Court lights will remain on for up to 15 minutes after the booked timeslot ends.</strong></li>
+        <li>Customers must only use the facilities during their booked timeslot and must make their way to exit once the timeslot concludes.</li>
+        <li>If JS Sports Arena experiences technical issues, entry may be delayed or start later than scheduled. Customers should use the contact numbers provided on our website for assistance.</li>
+        <li>All prices shown in the booking system are in AUD, include GST and may change without notice.</li>
+      </ul>
+
+      <h2>13. User accounts & communications</h2>
+      <ul>
+        <li>Customers must provide correct contact details and email addresses for the individual using the facilities so JS Sports Arena can deliver booking acknowledgements and access codes.</li>
+        <li>All booking-related communications (including access codes) will be sent from JS Sports Arena's official email addresses such as <a href="mailto:bookings@jssportsarena.com.au">bookings@jssportsarena.com.au</a></li>
+        <li>Providing false or misleading information, or otherwise failing to comply with these Terms, may lead to suspension of your user account and denial of access to the booking system. JS Sports Arena may also report unlawful behaviour to authorities.</li>
+      </ul>
+
+      <h2>14. Court booking credits</h2>
+      <ul>
+        <li>Customers may add court booking credit to their user account for future bookings using accepted card payments (Visa/Mastercard debit or credit).</li>
+        <li>Where a bonus value applies to a top-up tier, the bonus is added to the customer's account and used for bookings. Booking balances are reduced according to the prevailing hourly rates.</li>
+        <li>If a booking exceeds available credit, a top-up is required to complete the booking.</li>
+        <li><strong>Prepaid credits have a minimum validity period of 90 days</strong> from the date of purchase. All credit balances must be used before expiry; expired balances will be reset and no refund will be provided. Customers must ensure sufficient balance when booking.</li>
+      </ul>
+
+      <h2>15. Cancellation policy — court bookings</h2>
+      <ul>
+        <li>Cancellations must be made via the booking system at least <strong>24 hours</strong> before the scheduled booking start time to be eligible for a credit refund.</li>
+        <li>Failure to cancel online through the booking website within the specified time will render the customer ineligible for credit refund.</li>
+        <li>Recurring bookings may be rescheduled within 24 hours but are not eligible for refund.</li>
+        <li>Refunds for court booking credit top-ups are considered on a case-by-case basis. Bonus credits are non-refundable and non-transferable and may be deducted from any approved refund. The final refund amount will be calculated pro-rata based on prevailing court booking rates (excluding bonus credits).</li>
+        <li>If a refund is approved, a processing fee of <strong>$30</strong> will be charged.</li>
+      </ul>
+
+      <h2>16. Social session credits & cancellations</h2>
+      <ul>
+        <li>Social session cancellations must be made at least <strong>24 hours</strong> prior to the session start time via the booking website to be eligible for a credit refund.</li>
+        <li>Recurring social bookings may be rescheduled within 24 hours but no refund will be offered.</li>
+        <li>Any refund requests for social sessions will be assessed case-by-case and calculated after deducting session costs at prevailing social session rates.</li>
+      </ul>
+
+      <h2>17. Racket/Paddle hire</h2>
+      <p>Rackets & Paddles are available for hire at the centre during limited window of the day. Please call <a href="tel:+61490135009">+61 490 135 009</a> at least <strong>24 hours</strong> before booking if you wish to confirm availability.</p>
+
+      <h2>18. Contact & further information</h2>
+      <p>For booking assistance, account enquiries or other questions please use the contact details shown on our website or email <a href="mailto:bookings@jssportsarena.com.au">bookings@jssportsarena.com.au</a></p>
+
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="bg-dark-800 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid md:grid-cols-3 gap-12">
+        <div>
+          <h4 class="font-heading text-lg font-bold text-white mb-6">Quick Links</h4>
+          <div class="flex flex-col gap-3">
+            <a href="/rates.html" class="text-gray-400 hover:text-brand-400 transition text-sm">Rates</a>
+            <a href="/gallery.html" class="text-gray-400 hover:text-brand-400 transition text-sm">Gallery</a>
+            <a href="/contact.html" class="text-gray-400 hover:text-brand-400 transition text-sm">Contact</a>
+            <a href="/terms.html" class="text-gray-400 hover:text-brand-400 transition text-sm">Terms &amp; Conditions</a>
+            <a href="/privacy.html" class="text-gray-400 hover:text-brand-400 transition text-sm">Privacy Policy</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-heading text-lg font-bold text-white mb-6">Contact Info</h4>
+          <div class="flex flex-col gap-4">
+            <a href="https://www.google.com/maps?q=75+Anderson+Rd,+Smeaton+Grange+NSW+2567" class="text-gray-400 hover:text-brand-400 transition text-sm flex items-start gap-3">
+              <svg class="w-5 h-5 text-brand-500 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              75 Anderson Rd, Smeaton Grange NSW
+            </a>
+            <a href="tel:+61490135009" class="text-gray-400 hover:text-brand-400 transition text-sm flex items-center gap-3">
+              <svg class="w-5 h-5 text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              +61 490 135 009
+            </a>
+            <a href="mailto:bookings@jssportsarena.com.au" class="text-gray-400 hover:text-brand-400 transition text-sm flex items-center gap-3">
+              <svg class="w-5 h-5 text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              bookings@jssportsarena.com.au
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-heading text-lg font-bold text-white mb-6">Follow Us</h4>
+          <p class="text-gray-400 text-sm mb-6">Stay connected with JS Sports Arena for updates, events, and coaching tips.</p>
+          <div class="flex gap-4">
+            <a href="https://www.facebook.com/jssportsarena" class="w-10 h-10 rounded-lg bg-dark-600 flex items-center justify-center hover:bg-brand-700/30 transition"><svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="https://www.instagram.com/jssportsarena" class="w-10 h-10 rounded-lg bg-dark-600 flex items-center justify-center hover:bg-brand-700/30 transition"><svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+            <a href="https://wa.me/61490135009" class="w-10 h-10 rounded-lg bg-dark-600 flex items-center justify-center hover:bg-brand-700/30 transition"><svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-white/5 text-center">
+        <p class="text-gray-500 text-sm">&copy; 2026 JS Sports Arena. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
