@@ -26,9 +26,7 @@ git checkout staging
 
 ### 3. Save and deploy to staging
 ```
-git add .
-git commit -m "describe what you changed"
-git push
+git add . && git commit -m "describe what you changed" && git push
 ```
 Your changes will automatically appear on the staging site within 1–2 minutes.
 
@@ -37,10 +35,7 @@ Open https://website-8bea9e1b.diy.uih.mybluehost.me and make sure everything loo
 
 ### 5. When you're happy — push to production (live site)
 ```
-git checkout main
-git merge staging
-git push
-git checkout staging
+git checkout main && git merge staging && git push && git checkout staging
 ```
 Your changes will automatically appear on https://jssportsarena.com.au within 1–2 minutes.
 
