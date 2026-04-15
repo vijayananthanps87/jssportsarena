@@ -24,8 +24,10 @@
   </script>
   <style>
     *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'Inter',sans-serif;background:#0a0f1a;color:#e2e8f0}
-    .announcement-bar{background:linear-gradient(90deg,#0f2d1a,#163d24,#0f2d1a);background-size:200% 100%;animation:shimmer 3s ease-in-out infinite}
+    .announcement-bar{background:linear-gradient(90deg,#0f2d1a,#163d24,#0f2d1a);background-size:200% 100%;animation:shimmer 3s ease-in-out infinite;overflow:hidden}
     @keyframes shimmer{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+    @keyframes marquee{0%{transform:translateX(100vw)}100%{transform:translateX(-100%)}}
+    .marquee-text{display:inline-block;white-space:nowrap;animation:marquee 20s linear infinite}
     .nav-blur{backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
     .btn-primary{background:linear-gradient(135deg,#40F87F,#40F87F);transition:all 0.3s ease}
     .btn-primary:hover{box-shadow:0 8px 30px rgba(64,248,127,0.35);transform:translateY(-2px)}
@@ -43,7 +45,7 @@
 <body>
 
   <!-- Announcement Banner -->
-  <div class="announcement-bar text-center py-2 px-4 text-sm font-semibold text-white">Buy credits now and get more game time 💰 Choose Repeat to lock in your favourite time slot 🔁</div>
+  <div class="announcement-bar py-2 px-4 text-sm font-semibold text-white"><span class="marquee-text">Buy credits now and get more game time 💰 Choose Repeat to lock in your favourite time slot 🔁</span></div>
 
   <!-- Navigation -->
   <nav class="nav-blur sticky top-0 z-50 bg-dark-900/80 border-b border-white/5">
